@@ -5,6 +5,8 @@ const ARG = "ES";
 
 const country = Astro.request.headers.get("X-Vercel-IP-Country") ?? "ES";
 
+console.log(country);
+
 const storeCountry = country === ARG ? "arg" : "usa";
 const countryName = country === ARG ? "argentina" : "usa";
 
